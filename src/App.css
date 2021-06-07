@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Nunito;
+  src: url(./font/Nunito-Light.ttf);
+}
+* {
+  font-size: 12px;
+  font-family: Nunito;
+}
+.fa-rotate-45 {
+  transform: rotate(45deg);
+  position: absolute;
+}
+.color {
+  color: #cb7adb;
+}
+.color1 {
+  color: #f75363;
+}
+.cardbtn.btn {
+  width: 100%;
+  height: 6vh;
+}
+.sidecard span {
+  font-size: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.faitems .fa {
+  background-color: gray;
+  border-radius: 50px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.faitems .fa:hover {
+  background-color: #e43c5c;
+  /* background-color: #f3062e; */
+}
+.name {
+  font-size: 14px;
+}
+.A {
+  font-size: 13px;
+}
+.section {
+  background-color: #181019;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.progress:override {
+  background-color: rgba(13, 124, 228, 0.808);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card {
+  box-shadow: 0px 1px 4px 2px #494848;
+}
+/* .doughnut{
+    max-height: 265px;
+    max-width: 265px;
+    display: flex;
+    justify-content: center;
+} */
+.lower {
+  min-height: 415px;
+}
+.lower1 {
+  max-height: 415px;
+}
+.minH {
+  min-height: 400px;
+}
+.minH2 {
+  min-height: 985px;
+}
+.cards {
+  z-index: 1;
+}
+.menu_active {
+  border-right: 4px solid rgb(6, 81, 219);
+}
+.nav-link {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-link.menu_active {
+  color: rgb(6, 81, 219);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sticky-top{
+  padding-left: -15px;
+  padding-right: -15px;
+}
+.cards::before {
+  content: "";
+  position: absolute;
+  background: #fdeff2;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.4s;
+  z-index: -1;
+  color: white;
+}
+.cards:hover {
+  color: white;
+}
+.cards:hover::before {
+  background: #e43c5c;
+  top: 0;
+}
+.fa-search{
+  z-index: 1;
+  cursor: pointer;
+}
+.add{
+  font-size: 17px;
+}
+.col-sm-auto{
+  height: 100vh;
 }
