@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-import web from "./images/img.gif";
 import Credential from "./Data/Credentials";
 import { CircleProgress } from "react-gradient-progress";
 import { Label, ProgressBar } from "react-bootstrap";
@@ -14,13 +13,12 @@ function Home() {
     <section className="section">
       <div className="px-2">
         <div className="row mr-1">
-          <div className="col-sm-auto position-fixed bg-dark sticky-top pt-4 pl-2 gx-0">
+          <div className="col-sm-auto position-fixed B sticky-top pt-4 pl-2 gx-0">
             <NavLink
-              title=""
+              title="logo"
               data-bs-toggle="tooltip"
-              activeClassName="menu_active"
               className="nav-link text-white pb-5"
-              to="/h"
+              to="/"
             >
               <div className="fa fa-bank text-white fa-2x"></div>
             </NavLink>
@@ -120,7 +118,7 @@ function Home() {
           </div>
 
           <div className="col-sm p-0 min-vh-100 ml-4 pl-5">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+            <nav class="navbar navbar-expand-lg navbar-dark B text-white">
               <div className="row">
                 <div className="col-8">
                   <div className="container-fluid align-items-center d-flex">
@@ -188,20 +186,24 @@ function Home() {
                         </li>
                       </ul>
                       <div className="row align-items-center text-white d-flex">
-                      <div className="col-6">
-                      <div className="btn btn-primary align-items-center text-white d-flex justify-content-center float-right"><h4 className="add font-weight-bold d-flex align-items-center mt-1 pt-1 px-1">+ Add</h4></div>
-                      </div>
-                      <div className="col-6">
-                      <form className=" align-items-center text-white d-flex">
-                        <div className="fa fa-search text-white border-0 fa-lg px-2 position-absolute text-white"></div>
-                        <input
-                          className=" form-control border-0 py-3 position-relative bg-dark"
-                          type="search"
-                          placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search for Application here"
-                          aria-label="Search"
-                        />
-                      </form>
-                      </div>
+                        <div className="col-6">
+                          <div className="btn btn-primary align-items-center text-white d-flex justify-content-center float-right">
+                            <h4 className="add font-weight-bold d-flex align-items-center mt-1 pt-1 px-1">
+                              + Add
+                            </h4>
+                          </div>
+                        </div>
+                        <div className="col-6">
+                          <form className=" align-items-center text-white d-flex">
+                            <div className="fa fa-search text-white border-0 fa-lg px-2 position-absolute text-white"></div>
+                            <input
+                              className=" form-control border-0 py-3 position-relative bg-dark"
+                              type="search"
+                              placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search for Application here"
+                              aria-label="Search"
+                            />
+                          </form>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -211,13 +213,13 @@ function Home() {
 
             <div className="pl-3 pr-1">
               <div className="row pt-3">
-                <div className="col-9">
+                <div className="col-lg-9 col-md-9 col-12 height">
                   <div className="row">
                     <div className="col-4">
-                      <div className="card py-4 rounded  border-0 text-white bg-dark">
+                      <div className="B card py-4 rounded  border-0 text-white">
                         <div className="container">
                           <div className="row">
-                            <div className="col-6">
+                            <div className="col-lg-6 col-md-12 col-12">
                               <h5>Total Application</h5>
                               <h4 className="font-weight-bold">7956</h4>
                               <div className="color">
@@ -225,7 +227,7 @@ function Home() {
                                 <h6 className="px-4 pt-1">+0.6%</h6>
                               </div>
                             </div>
-                            <div className="col-6 d-flex justify-content-end">
+                            <div className="col-lg-6 col-md-12 col-12 d-flex justify-content-end">
                               <CircleProgress
                                 percentage={70}
                                 className="progress"
@@ -242,7 +244,7 @@ function Home() {
                       <div className="card py-4 rounded  border-0 text-white bg-primary">
                         <div className="container">
                           <div className="row ">
-                            <div className="col-6 ">
+                            <div className="col-lg-6 col-md-12 col-12 ">
                               <h5>Total Application</h5>
                               <h4 className="font-weight-bold">4658</h4>
                               <div className="">
@@ -250,7 +252,7 @@ function Home() {
                                 <h6 className="px-4 pt-1">+0.6%</h6>
                               </div>
                             </div>
-                            <div className="col-6 d-flex justify-content-end">
+                            <div className="col-lg-6 col-md-12 col-12 d-flex justify-content-end">
                               <CircleProgress
                                 percentage={60}
                                 className="progress"
@@ -264,10 +266,10 @@ function Home() {
                       </div>
                     </div>
                     <div className="col-4">
-                      <div className="card py-4 rounded  border-0 text-white bg-dark">
+                      <div className="card py-4 rounded  border-0 text-white B">
                         <div className="container">
                           <div className="row">
-                            <div className="col-6">
+                            <div className="col-lg-6 col-md-12 col-12">
                               <h5>Total Application</h5>
                               <h4 className="font-weight-bold">1501</h4>
                               <div className="color1">
@@ -275,7 +277,7 @@ function Home() {
                                 <h6 className="px-4 pt-1">+0.6%</h6>
                               </div>
                             </div>
-                            <div className="col-6 d-flex justify-content-end">
+                            <div className="col-lg-6 col-md-12 col-12 d-flex justify-content-end">
                               <CircleProgress
                                 percentage={60}
                                 className="progress"
@@ -292,8 +294,8 @@ function Home() {
 
                   <div className="row pt-4">
                     <div className="col-8">
-                      <div className="card rounded minH border-0 bg-dark text-white">
-                        <nav className="navbar rounded navbar-expand-lg navbar-light bg-dark ">
+                      <div className="card rounded minH border-0 B text-white">
+                        <nav className="navbar rounded navbar-expand-lg navbar-light B ">
                           <div className="container-fluid">
                             <a className="navbar-brand text-white">
                               Applications Received
@@ -347,7 +349,7 @@ function Home() {
                               ],
                               datasets: [
                                 {
-                                  label: "sales",
+                                  label: "Applications 2019",
                                   data: [1.5, 3, 3.2, 2.3, 4, 4.5, 3],
                                   borderColor: ["rgba(194, 44, 44, 0.87)"],
                                   backgroundColor: ["rgba(197, 60, 60, 0.596)"],
@@ -366,7 +368,7 @@ function Home() {
                                   },
                                 },
                                 {
-                                  label: "sales 2019",
+                                  label: "Applications 2020",
 
                                   data: [3, 2.2, 2.7, 3.4, 2.5, 3.5, 3],
                                   borderColor: ["rgba(161, 223, 17, 0.568)"],
@@ -389,9 +391,9 @@ function Home() {
                       </div>
                     </div>
                     <div className="col-4">
-                      <div className="card rounded  border-0 bg-dark text-white">
-                        <div className="container-fluid">
-                          <div className="row minH py-lg-4 pt-4">
+                      <div className="card rounded  border-0 B text-white pb-lg-3">
+                        <div className="container-fluid pb-lg-4">
+                          <div className="row minH3 py-lg-4 pt-4">
                             <h5 className="font-weight-bold">
                               Total Application
                             </h5>
@@ -481,7 +483,7 @@ function Home() {
 
                   <div className="row py-4 gy-5">
                     <div className="col-8">
-                      <div className="card rounded  border-0 bg-dark text-white pt-2 py-4 lower">
+                      <div className="card rounded  border-0 B text-white pt-2 py-4 lower">
                         <div className="container py-3">
                           <div className="row">
                             <div className="col-6">
@@ -505,7 +507,7 @@ function Home() {
                           </div>
                           <div className="row py-4 pb-5">
                             <div className="col-lg-3 col-md-6 pt-4 col-sm-6 col-6">
-                              <div className="card rounded border-0 justify-content-center d-flex  cards pb-4 text-white text-center bg-dark">
+                              <div className="card rounded border-0 justify-content-center d-flex  cards pb-4 text-white text-center B">
                                 <div className="card-header font-weight-bold py-3">
                                   <h5 className="font-weight-bold">
                                     {" "}
@@ -519,7 +521,7 @@ function Home() {
                               </div>
                             </div>
                             <div className="col-lg-3 col-md-6 pt-4 col-sm-6 col-6">
-                              <div className="card rounded  border-0 justify-content-center d-flex cards pb-4 text-white text-center bg-dark">
+                              <div className="card rounded  border-0 justify-content-center d-flex cards pb-4 text-white text-center B">
                                 <div className="card-header font-weight-bold py-3">
                                   <h5 className="font-weight-bold">
                                     {" "}
@@ -533,7 +535,7 @@ function Home() {
                               </div>
                             </div>
                             <div className="col-lg-3 col-md-6 pt-4 col-sm-6 col-6">
-                              <div className="card rounded  border-0 justify-content-center d-flex cards pb-4 text-white text-center bg-dark">
+                              <div className="card rounded  border-0 justify-content-center d-flex cards pb-4 text-white text-center B">
                                 <div className="card-header font-weight-bold py-3">
                                   <h5 className="font-weight-bold"> Shares</h5>
                                 </div>
@@ -544,7 +546,7 @@ function Home() {
                               </div>
                             </div>
                             <div className="col-lg-3 col-md-6 pt-4 col-sm-6 col-6">
-                              <div className="card rounded  border-0 justify-content-center d-flex cards pb-4 text-white text-center bg-dark">
+                              <div className="card rounded  border-0 justify-content-center d-flex cards pb-4 text-white text-center B">
                                 <div className="card-header font-weight-bold py-3">
                                   <h5 className="font-weight-bold">
                                     {" "}
@@ -569,7 +571,7 @@ function Home() {
                             <div className="col-6 text-center">
                               <div className="btn btn-danger d-flex align-items-center justify-content-center py-auto">
                                 <h5 className="align-items-center d-flex pt-2">
-                                  Pause All Running Campaign
+                                  Pause all running Campaign
                                 </h5>
                               </div>
                             </div>
@@ -578,7 +580,10 @@ function Home() {
                       </div>
                     </div>
                     <div className="col-4">
-                      <div className="card rounded border-0 text-white bg-dark py-4 lower1">
+                      <div className="card justify-content-center d-flex align-items-center  border-0 text-white B py-4 lower1">
+                        <h5 className="mx-4 mt-5 position-absolute">
+                          Open Positions
+                        </h5>
                         <div className="container">
                           <h5 className="font-weight-bold">
                             Open Positions By Department
@@ -606,15 +611,20 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-3">
-                  <div className="card rounded border-0 text-white bg-dark py-4 minH2">
+                <div className="col-lg-3 col-md-3 col-13">
+                  <div className="card rounded border-0 text-white B py-4 minH2">
                     <div className="text-center font-weight-bold">
                       <h5>
                         Hello John Bayer<br></br>You have & New Application
                         Today!
                       </h5>
                     </div>
-                    <img src={web} alt="img-fluid"></img>
+                    <div className="justify-content-center d-flex">
+                      <img
+                        src="https://i.pinimg.com/originals/f2/97/d1/f297d1ee3415f7909174a755bb5e7a32.png"
+                        className="w-75 img-fluid"
+                      ></img>
+                    </div>
 
                     <div className="container">
                       <br></br>
@@ -629,20 +639,21 @@ function Home() {
                         </div>
                       </div>
                       {user.map((elem) => {
-                        const { id, name, image, status } = elem;
+                        const { id, name, image, category } = elem;
                         return (
                           <div className="row sidecard py-4">
-                            <div className="col-lg-6 col-md-12 col-sm-12 col-12 d-flex align-items-center float-right">
+                            <div className="col-lg-8 col-md-12 col-sm-12 col-12 d-flex align-items-center float-right">
                               <div className="fa fa-user-circle fa-3x px-3"></div>
                               <h6 className="font-weight-bold name">
                                 {name}
                                 <br></br>
                                 <span className="text-white font-weight-normal">
-                                  Application {status}
+                                  Applied for{" "}
+                                  <span className="text-info">{category}</span>
                                 </span>
                               </h6>
                             </div>
-                            <div className="col-lg-6 col-md-12 col-sm-12 col-12 py-lg-0 py-4 faitems justify-content-center justify-content-lg-end align-items-center d-flex">
+                            <div className="col-lg-4 col-md-12 col-sm-12 col-12 py-lg-0 py-4 faitems justify-content-center justify-content-lg-end align-items-center d-flex">
                               <div className="fa fa-envelope fa-sm mx-2 px-2 py-2 text-center"></div>
                               <div className="fa fa-phone fa-sm mx-2 px-2 py-2 text-center"></div>
                             </div>
